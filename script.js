@@ -1,4 +1,4 @@
-﻿const WA_PHONE = "5512991468346";
+const WA_PHONE = "5551985625872";
 const MOBILE_BREAKPOINT = 768;
 const AVAILABLE_TIME_SLOTS = [
   "08:00",
@@ -604,7 +604,7 @@ function setupBookingForm() {
     const totalPrice = updateTotalPriceDisplay();
     const additionalServiceText = servicoAdicional ? ` e o adicional ${servicoAdicional}` : "";
     const totalPriceText = totalPrice > 0 ? ` Valor estimado ${formatPriceBr(totalPrice)}.` : "";
-    const message = `Olá, meu nome é ${nome} e gostaria de agendar ${servico}${additionalServiceText} no dia ${dataDesejada}, às ${horario}.${totalPriceText}`;
+    const message = `Olá, meu nome é ${nome} e gostaria de agendar ${servico}${additionalServiceText} no dia ${dataDesejada}, às ${horario}, na Porto Nail Designer.${totalPriceText}`;
 
     const waUrl = buildWaUrl(message);
     const popup = window.open(waUrl, "_blank", "noopener,noreferrer");
